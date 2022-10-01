@@ -10,3 +10,10 @@ ggplot(data = best_trimmed_flavors_df) +
 
 # Add a code chunk to the second line of code to map the aesthetic alpha to the variable Rating:
 geom_bar(mapping = aes(x = Company.Location, alpha = Rating))
+
+# A teammate creates a new plot based on the chocolate bar data. The teammate asks you to make some revisions to their code. Assume your teammate shares the following code chunk:
+ggplot(data = best_trimmed_flavors_df) +
+geom_bar(mapping = aes(x = Rating)) +
+
+# What code chunk do you add to the third line to create wrap around facets of the variable Rating? 
+facet_wrap(~Rating)
